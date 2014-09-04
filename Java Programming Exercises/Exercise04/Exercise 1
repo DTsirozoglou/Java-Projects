@@ -1,0 +1,98 @@
+------------------------------------------Exercise 1------------------------------------------
+
+How many * will be printed when the code is executed
+a) with n = 6 ? // In case those commands of "if" act like "else if"  3 * will be printed 
+
+b) with n = 20 ? // 5 * will be printed
+
+c) with n = 2 ? // 2 * will be printed
+
+d) with n = –1 ? // 1* will be printed
+
+------------------------------------------Exercise 3------------------------------------------
+
+String colour = "blue";
+if (x < 10)
+{
+colour = "red";
+}
+
+Rewrite the code above again, but this time start by setting the colour variable to “red”. How does 
+that change the condition?
+
+String colour = "red";
+if (x > 10)
+{
+colour = "blue";
+}
+
+------------------------------------------Exercise 4------------------------------------------
+The relational operators in Java are ==, !=, <, >, <=, and >=.
+Assume x and y are integers. Using relational operators, formulate the following conditions in 
+Java:
+
+a) x is positive : x > 0
+
+b) x is zero or negative : x <= 0
+
+c) x is at least 10 : x >= 10
+
+d) x is less than 10 : x < 10
+
+e) x and y are both zero : (x==0 && y ==0)
+
+f) x is even : x==x
+
+------------------------------------------Exercise 5------------------------------------------
+
+Assume the following code:
+
+String word1 = "catalog";
+String word2 = "cat";
+
+Write the following conditions in Java:
+1) word1 is lexicographically greater than "aaa"
+2) word1 is lexicographically equal to word2
+3) word1 is lexicographically less than word2 
+4) word1 and word2 have the same three-letter prefix
+
+1: word1.compareTo("aaa")>0
+2: word1.compareTo(word2)==0
+3: word1.compareTo(word2)<0
+4: word1.substring(0,2).equals(word2) // can i do it like that or i should first store the substring in a variable and then compare?
+
+------------------------------------------Exercise 15------------------------------------------
+
+Java has three logical operators, &&, ||, and !. Using these operators, express the following:
+
+1) x and y are both positive or neither of them is positive.
+
+((x>0) && (y>0)) || (!(x>0) && !(y>0))
+
+2) Formulate the following conditions on the date given by the variables day and month of type int.
+	
+	a) The date is in the second quarter of the year.
+	b) The date is the last day of the month. (Assume February always has 28 days.)
+	c) The date is before April 15.
+	
+a)	(month >= 4) && (month <= 6)
+
+b)  if (((month == 2) && (day == 28)) || (((month ==4) || (month ==6) || (month ==9) || (month ==11)) && (day == 30)) || (day == 31))
+    {
+    	System.out.print("The date is the last day of the month.");
+    }
+	else
+	{
+		System.out.print("The date is not the last day of the month.");
+	}
+
+c)  (month <= 4) && (day <= 15)	
+
+------------------------------------------Exercise 16------------------------------------------
+	
+According to the given program, what colour results when using the following inputs?
+
+a) Y N Y -> results to PURPLE
+b) Y Y N -> results to YELLOW
+c) N N N -> results to BLACK
+	

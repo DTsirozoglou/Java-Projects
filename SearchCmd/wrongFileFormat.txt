@@ -1,0 +1,12 @@
+*  PAGE:http://www.itu.dk/index.html
+Here
+is
+a
+word
+and
+*PAGE:http://www.itu.dk/index.html2
+Here
+is
+a
+word
+and

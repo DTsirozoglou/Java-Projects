@@ -1,0 +1,56 @@
+------------------------------------------------------------------
+--------------------------- Exercise 3 ---------------------------
+------------------------------------------------------------------
+
+Which of the following classes depend on each other?
+String
+StringTokenizer
+PrintStream
+Random
+
+I am not sure that I have understood the question. I think that none of the above classes depend on each other.
+
+------------------------------------------------------------------
+--------------------------- Exercise 4 ---------------------------
+------------------------------------------------------------------
+
+Look up the methods of the StringTokenizer class in the API documentation. Which 
+methods are accessors? Which are mutators?
+
+accessors:
+public boolean hasMoreTokens()
+public String nextToken()
+public String nextToken(String delim)
+public boolean hasMoreElements()
+public Object nextElement()
+public int countTokens()
+
+The class is immutable!!
+
+------------------------------------------------------------------
+--------------------------- Exercise 9 ---------------------------
+------------------------------------------------------------------
+
+Suppose a CashRegister class has the following methods:
+* recordPurchase
+* enterPayment
+* giveChange
+* getPurchaseAmount
+
+Provide an appropriate precondition and postcondition for the recordPurchase method of the 
+CashRegister class, which is defined as follows:
+
+/**
+Records the purchase price of an item.
+@param amount the price of the purchased item
+*/
+public void recordPurchase(double amount)
+{
+purchase = purchase + amount;
+}
+
+precondition:
+things that must be true before a method is called:
+purchase must have an initial value.
+postcondition:
+The value of purchase will be updated  and now will be the old one plus the one's newly purchased.
